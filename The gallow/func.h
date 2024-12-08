@@ -12,6 +12,7 @@ bool proverka(string word, string &word_copy, char lett, int &mis)
 {
 	bool flag = false;
 	for (int i = word.size();i >= 0;i--) {
+        system("cls");
 		if (word[i] == lett) {
 			word_copy.replace(i, 1,  "*");
 			flag = true;
