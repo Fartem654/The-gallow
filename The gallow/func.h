@@ -19,11 +19,11 @@ bool proverka(string word, string &word_copy, char lett, int &mis)
 		}
 	}
 	if (flag) {
-		cout << "Буква " << lett << " верна";
+		cout << "Буква " << lett << " верна\n";
 	}
 	else {
 		mis++;
-		cout << "Неверно. У вас осталось " << 6 - mis << " попыток ";
+		cout << "Неверно. У вас осталось " << 6 - mis << " попыток \n";
 	}
 	for (int i = 0; i < word.size();i++) {
 		if (word[i] == word_copy[i]) {

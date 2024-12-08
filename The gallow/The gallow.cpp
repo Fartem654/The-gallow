@@ -12,6 +12,7 @@ int main() {
     int miss=0,hits=0;
     char letter;
     string word=choice_word(),word_copy=word,word_res;
+
     for (int i = 0;i < word.size();i++)
         word_res.append("*");
     cout << "Длина слова: " << word.size();
@@ -27,12 +28,12 @@ int main() {
 
     // Конечный вывод
     if (miss != 6) {
-        cout << "\nПоздравляем, Вы отгадали слово!\nЧисло ошибок: " << miss;
+        cout << "\nПоздравляем, Вы отгадали слово!\nЧисло ошибок: " << miss << endl;
     }
     else {
         for (int i = 0;i < word.size();i++)
             if (word_copy[i] == '*')
                 hits++;
-        cout << "\nВы проиграли :(\nВы отгадали: "<<hits<<" из "<<word.size()<<" букв\nЗагаданное слово было: "<<word;
+        cout << "\nВы проиграли :(\nВы отгадали: "<<hits<<" из "<<word.size()<<" букв\nЗагаданное слово было: "<<word << endl;
     }
 }
